@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Miracle!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Short+Stack&display=swap" rel="stylesheet">
+    <!-- <script>
+        window.onload = function() {
+            alert("No vex abeg na the small thing wey i fit think of be this (Your Friend: ZUKI 😜)");
+        };
+        
+    </script> -->
+    <style>
+        body {
+            /*background-color: #f8f9fa;*/
+            /*background: url(/images/miracle1.jpeg) no-repeat no-repeat center;*/
+            /*background-position: center;*/
+            /*height: 100%;*/
+            /*background-size: cover;*/
+            /*font-family: 'Homemade Apple', cursive;*/
+            /*width: 100%;*/
+            /*margin: 0;*/
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            animation: backgroundAnimation 10s infinite alternate;
+        }
+        @keyframes backgroundAnimation {
+            0% { background-image: url('/images/miracle1.jpeg'); }
+            25% { background-image: url('/images/2151025784.jpg'); }
+            50% { background-image: url('/images/IMG-20240214-WA0005.jpg'); }
+            75% { background-image: url('/images/IMG-20240214-WA0005.jpg'); }
+            100% { background-image: url('/images/IMG-20240214-WA0005.jpg'); }
+        }
+        .container {
+            text-align: center;
+            padding-top: 50px;
+            background-color: #fff;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            max-width: 400px;
+            margin: 0 auto;
+            margin-top: 5%;
+            overflow: hidden;
+        }
+        .link {
+            text-decoration: none;
+            color: #fff;
+            font-size: 24px;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+            border-radius: 5px;
+        }
+        .animated-text {
+            animation: blinker 1.5s linear infinite;
+        }
+        .surprise-link {
+            animation: bounce 2s infinite;
+        }
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+        .balloons {
+        position: fixed;
+        bottom: -100px;
+        text-align: center;
+        justify-content: center;
+        place-items: center;
+        align-items: center;
+        margin-left: 50px;
+        z-index: 1;
+        animation: floaty 20s ease-in infinite;
+    }
+
+    @keyframes floaty {
+        0% {
+            bottom: -100px;
+        }
+
+        100% {
+            bottom: 100vh;
+        }
+    }
+
+    .balloon {
+        font-size: 3rem;
+        animation: balloon-float 5s ease-in-out infinite, balloon-scale 3s alternate infinite;
+        display: inline-block;
+        margin: 1rem;
+    }
+
+    @keyframes balloon-float {
+        0% {
+            transform: translateY(0) rotate(0deg);
+        }
+
+        50% {
+            transform: translateY(-30vh) rotate(20deg);
+        }
+
+        100% {
+            transform: translateY(0) rotate(0deg);
+        }
+    }
+
+    @keyframes balloon-scale {
+        0% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(1.2);
+        }
+    }
+    .img-div img{
+        width: 100%;
+        margin: auto;
+        padding-top: 10px;
+
+    }
+    @media only screen and (min-width: 600px) and (max-width: 900px) {
+    .big-container {
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+    .img-div img{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .big-container {
+        flex-direction: column-reverse;
+    }
+    .balloons{
+        margin: 0;
+    }
+    .img-div img{
+        display: none;
+    }
+    .container{
+        min-width: 50%;
+        overflow: hidden;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="big-container d-flex">
+        <div class="img-div">
+            <img src="images/undraw_gifts_0ceh.svg" alt="">
+        </div>
+    <div class="container">
+        
+        <div class="div-2">
+            <h1 class="text-danger mb-5 animated-text">Happy Birthday, Miracle!</h1>
+            <img src="images/IMG-20240214-WA0002.jpg" height="10%" width="50%" style="border:10px solid #FF6384; margin-top:40px; border-radius: 10px;" alt="">
+        <p class="text-info mb-5">Wishing you a day filled with love and happiness!</p>
+        </div>
+        <a href="page1.html" class="link surprise-link btn btn-warning" >Click here to see the first surprise!</a><br><br>
+        <a href="page2.html" class="link surprise-link btn btn-success">Or click here to see the second surprise!</a>
+    </div>
+    <div class="balloons">
+    <span class="balloon" style="color: #FF6384;">🎈</span>
+    <span class="balloon" style="color: #36A2EB;">🎈</span>
+    <span class="balloon" style="color: #FFCE56;">🎉</span>
+    <span class="balloon" style="color: #4BC0C0;">🎉</span>
+    <span class="balloon" style="color: #9966FF;">🎈</span>
+    <span class="balloon" style="color: #FF9F40;">🎈</span>
+</div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Additional JavaScript for animation
+        $(document).ready(function() {
+            // Add animations to links on hover
+            $('.link').hover(
+                function() { $(this).addClass('text-warning'); },
+                function() { $(this).removeClass('text-warning'); }
+            );
+        });
+    </script>
+</body>
+</html>

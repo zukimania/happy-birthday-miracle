@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+ <script>
+        window.onload = function() {
+            alert("Use Earpiece ooo");
+        };
+        
+    </script>
+<body>
+    <video id="video-background" autoplay muted loop>
+        <source src="1118546_4k_Form_Graphic_1920x1080.mp4" type="video/mp4">
+    </video>
+    <audio id="background-audio" loop>
+        <source src="happy-birthday-to-you-piano-version-13976.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+   <style>
+    .audio-button.confetti {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .audio-button.confetti:before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: #FFC107; /* Confetti color */
+        border-radius: 50%;
+        animation: confetti-fall 3s ease infinite;
+    }
+
+    @keyframes confetti-fall {
+        0% {
+            transform: translateY(-200px) rotate(0deg);
+        }
+        100% {
+            transform: translateY(1000px) rotate(360deg);
+        }
+    }
+
+     body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+     #video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            background-size: cover;
+        }
+    .div-1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10%;
+        /*background-color: #f0f0f0;*/
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        height: 100vh;
+    }
+    .div-txt {
+        text-align: left;
+        margin-bottom: 20px;
+        
+    }
+    .div-txt h1 {
+        color: #fff;
+        font-size: 50px;
+        text-shadow: 0 0 5px #4CAF50, 0 0 10px #4CAF50, 0 0 15px #4CAF50;
+    }
+    .div-img img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        border: 4px solid #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .audio-button {
+        background-color: #FFC107;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+
+    .audio-button:hover {
+        background-color: #FFA000;
+    }
+
+    .audio-button:active {
+        background-color: #FF8F00;
+    }
+    @media only screen and (max-width: 600px) {
+        .div-1{
+            flex-direction: column;
+        }
+    }
+    @media only screen and (min-width: 600px) and (max-width: 900px) {
+        .div-1{
+            flex-direction: column;
+        }
+    }
+</style>
+
+<div class="div-1">
+    <div class="div-txt">
+        <h1>Happy Birthday to You Miracle</h1>
+        <p class="f-2 text-white">On this extraordinary day, we celebrate the remarkable journey of your life, filled with grace, kindness, and boundless love. Today marks another chapter in your beautiful story, a chapter brimming with endless possibilities and dreams waiting to unfold.
+
+        May your path be strewn with flowers, your days be filled with laughter, and your heart overflow with love. Today, and every day, we celebrate you—the extraordinary woman who graces our lives with her presence.
+
+        Happy birthday, with all our love and admiration.
+
+</p>
+        <button class="audio-button btn btn-warning" onclick="toggleAudio()">Play Birthday Song</button>
+    </div>
+    <div class="div-img">
+        <img src="/images/miracle1.jpeg" alt="">
+    </div>
+</div>
+
+ <script>
+        const audio = document.getElementById('background-audio');
+        const content = document.querySelector('.content');
+
+        function toggleAudio() {
+            if (audio.paused) {
+                audio.play();
+                content.classList.add('show');
+            } else {
+                audio.pause();
+                content.classList.remove('show');
+            }
+        }
+    </script>
+
+
+</body>
+</html>
